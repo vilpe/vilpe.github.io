@@ -1,0 +1,13 @@
+nav {
+    display: flex;
+    background-color: grey;
+    justify-content: space-between;
+}
+.linkit {
+
+}
+body {
+    display: flex;
+    background-color:skyblue;
+    justify-content: center;
+}
