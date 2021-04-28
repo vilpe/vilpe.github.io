@@ -16,6 +16,7 @@
 					<header id="header" class="alt">
 						<!--<span class="logo"><img src="images/logo.svg" alt="" /></span>-->
 						<h1>Villen Portfolio</h1>
+						<h2>M2955</h2>
 					</header>
 
 				<!-- Nav -->
@@ -27,6 +28,7 @@
 							<li><a href="#third">Haasteita</a></li>
                             <li><a href="#fourth">Työt</a></li>
                             <li><a href="#fifth">Scrum</a></li>
+							<li><a href="#sixth">Tulevaisuus</a></li>
 						</ul>
 					</nav>
 
@@ -81,9 +83,119 @@
                                         <li>Herokun käyttö kuten pipeline ja dynot</li>
                                         <li>SM roolissa tiimi tyytyväinen ja scrumin etuja nähty varsinkin etätyössä.</li>
                                         <li>Yleisesti mukana kaikkien sivujen ulkonäön suunnittelussa</li>
-                                        <li>Osaan suunnitella ominaisuuksia paremmin ja rakentaa hajottaa käyttäjäkertomuksia</li>
                                     </ul>
                                 </p>
+							</section>
+							<section id="third" class="main">
+								<header class="major">
+									<h2>Haasteita</h2>
+									<p>Kohdattuja haasteellisia asioita</p>
+								</header>
+                                <p>
+									Suunnitellessa tuli lopussa vastaan serverin tehokkuus mm. salauksessa. Autentikaatio jää todennäköisesti keskeneräiseksi JWT sisällön ja headereiden validaatiossa.
+									Henk. kohtainen ongelma oli myös backlog, halusin yrittää monia asioita mikä johti viimeistelemättömiin ominaisuuksiin. Olisin voinut myös projektin aikana voinut pyytää apua omalta ryhmältä ja ohjaajilta
+									uusien näkökulmien saamiseen ja pään seinään hakkaamisen vähentämiseksi.
+                                </p>
+								<footer>
+									Haasteista enemmän töitten läpikäynnissä.
+								</footer>
+							</section>
+							<section id="fourth" class="main">
+								<header class="major">
+									<h2>Kootut työt</h2>
+									<p>Tekemäni kokonaisuudet tarkemmin läpikäytynä</p>
+								</header>
+                                <p>
+									<h3>Kuvagalleria</h3>
+									<p>
+										Ensimmäinen suuri kokonaisuus mihin tartuin. Tehtävänä oli kuvien tallennus MongoDB atlakseen ja niiden haku kuvagalleriasivulle. Kuvaa klikkaamalla pääsee lisäksi väriresepti-sivulle ja 
+										kuvan tiedot tulevat mukana. Tein myös yksinkertaisen kategoriavalinnan ja hakupalkin. Opin Express backendin asennuksesta ja router/controller/model mallista. Frontendissä Angular service, observablella tieto komponenttien välillä.
+										<div class="box alt">
+											<div class="row gtr-uniform">
+												<div class="col-12"><span class="image fit"><img src="images/Kg1.png" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/Kg2.png" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/Kg3.png" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/Kg4.png" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/Kg5.png" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/Kg6.png" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/Kg7.png" alt="" /></span></div>
+											</div>
+										</div>
+									</p>
+									<h3>Adminsivu</h3>
+									<p>
+										Angular formsin käyttöä, CRUD reitit loppuun. Sivu on myös suojattu JWT tokenissa sijaitsevalla admin arvolla.
+										<div class="box alt">
+											<div class="row gtr-uniform">
+												<div class="col-6"><span class="image fit"><img src="images/As1.png" alt="" /></span></div>
+												<div class="col-6"><span class="image fit"><img src="images/As2.png" alt="" /></span></div>
+												<div class="col-6"><span class="image fit"><img src="images/As3.png" alt="" /></span></div>
+											</div>
+										</div>
+									</p>
+									<h3>Kirjautumisjärjestelmä</h3>
+									<p>Angularin sivuille pääsy suojattu sessionstoragessa olevalla tokenilla. Token saadaan kirjautumalla oikealla sähköpostilla ja salasanalla.
+										Keskeneräistä ja haastavaa tokenin sisältö kuten Issuer ja expiration.
+										<ul>
+											<li>Bcrypt salaus salasanoille</li>
+											<li>Bearer autorisaatio token automaattisesti HTTP Interceptorin avulla, kantareitit suojattu ilman sitä</li>
+										</ul>
+										<div class="box alt">
+											<div class="row gtr-uniform">
+												<div class="col-6"><span class="image fit"><img src="images/Kj1.png" alt="" /></span></div>
+												<div class="col-6"><span class="image fit"><img src="images/Kj2.png" alt="" /></span></div>
+											</div>
+										</div>
+									</p>
+									<h3>Muita yleisiä töitä projektissa</h3>
+									<p>
+										Värireseptin material stepperin käyttö: pisteitten keräys formista, laskeminen ja tulosteet.<br>
+										Kaikkien sivujen ulkonäön kehitys ja responsiivisuus. Käytetty bootstrap ja angular material.<br>
+										Värikoodien yhdistelyä hiusten värjäyksen previewiä varten.<br>
+										Hieno interaktiivinen email validaatio kirjautumissivulle.
+										<div class="box alt">
+											<div class="row gtr-uniform">
+												<div class="col-4"><span class="image fit"><img src="images/vali1.png" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/vali2.png" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/vali3.png" alt="" /></span></div>
+											</div>
+										</div>
+									</p>
+                                </p>
+							</section>
+							<section id="fifth" class="main">
+								<header class="major">
+									<h2>Scrum</h2>
+								</header>
+								<p>
+									<p>Toimin tiimin toisena Scrum Masterina. Suorituksia mm.</p>
+									<ul>
+										<li>Dailyt: Jokaisena päivänä n. samaan aikaan, tiimin tärkein tapahtuma mielestäni että jokainen pysyy kelkassa.</li>
+										<li>Viikkopalaveri: Yhteisesti katsotaan ja suunnitellaan</li>
+										<li>Sprint planning: Tavoitteet, jokaiselle mieleisiä töitä jotka olisi mahdollista suorittaa aikataulussa. Tehtävät minimiselostuksella
+											ja pisteytettynä Zenhubiin. Vähemmän painotusta käyttäjäkertomuksien yksityiskohdille tiimin osaamisen puutteen takia.
+										</li>
+										<li>Sprint review, retrospektiivi: retrospektiivi flingassa anonyymisti mad/glad/sad pohjalla. Keskustelua korteista ja kehityksestä.
+											Reviewissä harjoittelua asiakasraportoinnista.
+										</li>
+									</ul>
+									<div class="col-4"><span class="image right"><img src="images/retro.png" alt="" /></span></div>
+									Scrum masterina tuotimme jakoon kaikki tarvittavat asiakirjat ja selitimme kaikki tapahtumat. Ei juuri ollenkaan "johtamista" vaan pelkästään
+									prosessiin liittyvät asiat. Story pointit ja velocity heikosti hyödynnettyjä, jokaiseen sprinttiin saatiin kuitenkin kokonaisia toimivia
+									kokonaisuuksia kertomuksiin liittyen ns. autoregulaatiolla.
+								</p>
+							</section>
+							<section id="sixth" class="main">
+								<header class="major">
+									<h2>Tulevaisuus</h2>
+								</header>
+								<p>
+									Olen löytänyt itsevarmuutta ratkaisemaan ongelmia. Osaan lukea paremmin virheitä ja googlata oikeassa kontekstissa. <br>
+									Osaan jatkossa aloittaa uuden projektin paljon pitkänäköisemmin(laadukasta formatointia, selkeitä virhekoodeja).
+									Osaan suunnitella ominaisuuksia paremmin ja rakentaa sekä hajottaa käyttäjäkertomuksia. <br>
+									Jatkossa aion suorittaa Full Stack open 2021 kurssin ja perehtyä react kirjastoon. <br>
+									Minussa on myös herännyt kiinnostusta pilvipalveluita kuten AWS/Azure kohtaan sekä haluaisin oppia pipelineistä ja dockerin käytöstä (DevOps With Docker). 
+								</p>
 							</section>
 
 					</div>
