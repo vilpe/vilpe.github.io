@@ -50,17 +50,26 @@ const x = canvas.width / 2
 const y = canvas.height / 2
 let newX = x
 const muna = new Player(x,y,50,'blue')
-const proj = new Projectile(100,0,20,'red',{x:1,y:1})
+//const proj = new Projectile(100,0,20,'red',{x:1,y:1})
 const projectiles = []
 muna.draw(x,y)
+
+function spawnDrops () {
+    setInterval(() => {
+        const newProj = new Projectile((Math.random()*innerWidth),0,30,'red',{x:1,y:1})
+        projectiles.push(newProj)
+    }, 1000)
+}
 
 function animate() {
     requestAnimationFrame(animate)
     c.clearRect(0,0,canvas.width,canvas.height)
     muna.draw(newX,y)
     muna.update()
-    proj.draw()
-    proj.update()
+    projectiles.forEach((proj) => {
+        proj.draw()
+        proj.update()
+    })
     
 }
 
@@ -74,3 +83,4 @@ window.addEventListener('click', (event) => {
 })
 
 animate()
+spawnDrops()
