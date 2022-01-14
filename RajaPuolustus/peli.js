@@ -234,17 +234,8 @@ function spawnEnemies() {
     },3000-round*2000)
 }
 
-startButton.addEventListener('click',() => {
-    if(game === true) {
-        game = false
-        console.log(game)
-    } else if (game === false){
-        game = true
-        console.log(game)
-    }
-})
+
 if(game = true) {
-    console.log('toimi vittu')
     animate()
     ammoAdder()
     spawnEnemies()
