@@ -1,36 +1,14 @@
-
-.tyyrisImg {
-    display:none
-}
-.score {
-    width: 7%;
-    height: 2%;
-    background-color:red;
-    position: fixed;
+body {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.startDiv {
-    display:flex;
-    margin:25% 25%;
-    background-color: rgba(0, 0, 0, 0.1);
-    padding-top: 5%;
-    padding-bottom: 5%;
+    height: 100%;
     flex-direction: column;
-    border: 1px solid black;
-    width: 50%;
-    height: 10%;
-    position: fixed;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-
-
+    margin: auto;
+    justify-content: space-around;
+    padding: auto;
 }
-button {
-    display: block
-}
-#numba {
-    font-size: 20px;
+body > a {
+    margin: auto;
+    justify-content: space-around;
+    font-size: 100px;
+    background-color: tan;
 }
