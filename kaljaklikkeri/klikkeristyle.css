@@ -11,3 +11,14 @@ body > div {
 #raha {
     font-size: 4rem;
 }
+button {
+    font-size: 100px;
+}
+#konkurssi {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    font-size: 100px;
+    text-align: center;
+}

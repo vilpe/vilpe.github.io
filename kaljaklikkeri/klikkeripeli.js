@@ -58,6 +58,7 @@ function rahatLoppu() {
     setInterval(() => {
         if(raha <= 0) {
             console.log('rahat loppu')
+            document.getElementById('konkurssi').style.display = 'inline'
         }
     },1000)
 }
