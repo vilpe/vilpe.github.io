@@ -1,0 +1,13 @@
+body {
+    display:flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+}
+body > div {
+    width: 50%;
+    border: 1px solid black;
+}
+#raha {
+    font-size: 4rem;
+}
