@@ -1,14 +1,6 @@
-body {
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    margin: auto;
-    justify-content: space-around;
-    padding: auto;
+#esittely {
+    background-color: green;
 }
-body > a {
-    margin: auto;
-    justify-content: space-around;
-    font-size: 100px;
-    background-color: tan;
+#esittely:nth-child(odd) {
+    background-color: hotpink;
 }

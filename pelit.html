@@ -1,0 +1,44 @@
+<html>
+    <link rel="stylesheet" href="etustyle.css">
+    <body>
+        <header>
+            <p>Villen Portfolio</p>
+            <div id="linkit">
+                <a href="index.html">etusivu</a>
+                <a href="sovellukset.html">sovellukset</a>
+            </div>
+        </header>
+        <a href="RajaPuolustus/index.html">RajaPuolustus</a>
+        <a href="tyyris/index.html">tyyris</a>
+        <div id="esittely">
+            <p>täsä koodipalikka</p>
+            <pre>
+                function animate() {
+                c.clearRect(0,0,canvas.width,canvas.height)
+                requestAnimationFrame(animate)
+                oluet.forEach((olut,index) => {
+                    olut.draw()
+                    olut.update()
+                    if(olut.y > canvas.height) {
+                        oluet.splice(index,1)
+                    }
+                })
+                }
+            </pre>
+        </div>
+        <div id="esittely">
+            <p>täsä toinen</p>
+            <pre>
+                window.addEventListener('click', (event) => {
+                    oluet.forEach((olut,index) => {
+                        const dist = Math.hypot(olut.x - (event.clientX-canvas.width), olut.y - event.clientY)
+                        if (dist - 100 < 1) {
+                            rahaEl.innerHTML = raha -= 1
+                            oluet.splice(index,1)
+                        }
+                    })
+                })
+            </pre>
+        </div>
+    </body>
+</html>
