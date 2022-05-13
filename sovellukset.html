@@ -11,5 +11,53 @@
         <a href="https://vilpe.github.io/ostoslista/">Ostoslista</a>
         <a href="kaljaklikkeri/index.html">Kaljaklikkeri</a>
         <a href="https://vilpe.github.io/prideguesser/">prideguesser</a>
+        <div id="esittely">
+        <pre>
+            //vastausmahdollisuuksien arvonta 
+            function neljäRandomia() {
+                const uniqAr = []
+                const vAr = []
+                while (uniqAr.length < 4) {
+                  uniqAr[0] = currentRef.current
+                  const rand = Math.floor(Math.random()*kortit.length)
+                  if(uniqAr.indexOf(rand) === -1) {
+                    uniqAr.push(rand)
+                  }
+                }
+        </pre>
+    </div>
+        <div id="esittely">
+            <pre>
+                //ostoslistan tuotteen elementti
+                function YksiTuote({tuote}) {
+                    const [ostettu, setOstettu] = useState(false);
+                    const onOstettu = {
+                      backgroundColor: ostettu ? 'green' : '',
+                    }
+                    const osta = () => {
+                      setOstettu(!ostettu)
+                    }
+                    return (
+                      <div className='lista' style={onOstettu} onClick={osta}>
+                        {tuote.nimi} {tuote.maara}
+                      </div>
+                    )
+                  }
+            </pre>
+        </div>
+        <div id="esittely">
+            <pre>
+                //klikkauksen tunnistus
+                window.addEventListener('click', (event) => {
+                    oluet.forEach((olut,index) => {
+                        const dist = Math.hypot(olut.x - (event.clientX-canvas.width), olut.y - event.clientY)
+                        if (dist - 100 < 1) {
+                            rahaEl.innerHTML = raha -= 1
+                            oluet.splice(index,1)
+                        }
+                    })
+                })
+            </pre>
+        </div>
     </body>
 </html>

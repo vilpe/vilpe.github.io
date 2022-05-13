@@ -4,3 +4,51 @@
 #esittely:nth-child(odd) {
     background-color: hotpink;
 }
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background: linear-gradient(90deg, rgba(0,189,255,1) 35%, rgba(9,117,121,1) 64%, rgba(3,8,64,1) 94%);
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 1.2rem;
+    color: white;
+  }
+  
+  .bg1 {
+    /* The image used */
+    background-image: url("./kuvat/bg.png");
+    margin-top:0;
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .bg2 {
+          /* The image used */
+    background-image: url("./kuvat/bg.png");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+img {
+    width: 400px;
+    height: 400px;
+}
+header {
+    background: linear-gradient(90deg, rgba(0,189,255,1) 35%, rgba(9,117,121,1) 64%, rgba(3,8,64,1) 94%);
+}
+ul {
+    background: black;
+    width: 50%;
+}
