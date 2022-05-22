@@ -11,6 +11,7 @@
         <a href="https://vilpe.github.io/ostoslista/">Ostoslista</a>
         <a href="kaljaklikkeri/index.html">Kaljaklikkeri</a>
         <a href="https://vilpe.github.io/prideguesser/">prideguesser</a>
+        <p>Valittuja koodinpätkiä sovelluksista</p>
         <div id="esittely">
         <pre>
             //vastausmahdollisuuksien arvonta 
@@ -38,9 +39,9 @@
                       setOstettu(!ostettu)
                     }
                     return (
-                      <div className='lista' style={onOstettu} onClick={osta}>
+                      div className='lista' style={onOstettu} onClick={osta}>
                         {tuote.nimi} {tuote.maara}
-                      </div>
+                      div
                     )
                   }
             </pre>
@@ -58,6 +59,52 @@
                     })
                 })
             </pre>
+        </div>
+        <div id="esittely">
+          <pre>
+            // testausta jestillä
+            test('big info is hidden then clicked not hidden', () => {
+              const blog = {
+                  author:'Test Author',
+                  title:'Testing is fun',
+                  url:'www.google.com',
+                  likes:'7'
+              }
+              const component = render(
+                  Blog blog={blog} /
+              )
+              const div = component.container.querySelector('.bigInfo')
+              expect(div).toHaveStyle(
+                  'display:none'
+              )
+              const button = component.getByText('more info')
+              fireEvent.click(button)
+              expect(div).not.toHaveStyle('display:none')
+              expect(div).toHaveTextContent('www.google.com')
+              expect(div).toHaveTextContent('7')
+          })
+          </pre>
+        </div>
+        <div id="esittely">
+          <pre>
+            //supertest
+            afterAll(() => {
+              mongoose.connection.close()
+            })
+          beforeAll(async () => {
+              await Blog.deleteMany({})
+              for (let i=0;i blogs.length;i++) {
+                  let newBlog = new Blog(blogs[i])
+                  await newBlog.save()
+              }
+          })
+          test('get right amount of json blogs', async () => {
+                   const res = await api.get('/api/blogs')
+                      expect(res.status).toBe(200)
+                      expect(res.headers['content-type']).toContain(`application\/json`)
+                      expect(res.body).toHaveLength(6)
+              })
+          </pre>
         </div>
     </body>
 </html>

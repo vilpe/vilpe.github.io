@@ -1,8 +1,6 @@
 #esittely {
-    background-color: green;
-}
-#esittely:nth-child(odd) {
-    background-color: hotpink;
+    background-color: black;
+    color: green;
 }
 body, html {
     height: 100%;
@@ -51,4 +49,13 @@ header {
 ul {
     background: black;
     width: 50%;
+}
+.teksti {
+    border: 1px solid black;
+    background-color: black;
+    color: green;
+}
+#linkit a {
+    border: 2px solid black;
+    padding: 10px 10px 0px 10px;
 }

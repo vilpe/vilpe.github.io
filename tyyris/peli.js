@@ -5,7 +5,7 @@ canvas.width = innerWidth
 canvas.height = innerHeight
 //kuvat pitää initalisoida
 const song = new Audio
-song.src = 'tyyris.mp3'
+//song.src = 'tyyris.mp3'
 song.muted = false
 const tyyris = new Image()
 tyyris.src = 'egg.png'
