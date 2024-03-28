@@ -112,7 +112,7 @@ let roundEl = document.getElementById('roundEl')
 roundEl.innerHTML = round
 
 const pelaaja = new Player(canvas.width/2,canvas.height/2,'red')
-const startText = new movingText(canvas.width/2,0,`Ryssät tulee`)
+const startText = new movingText(canvas.width/2,0,`Puolusta!!!`)
 let game = false
 let startButton = document.getElementById('startButton')
 const projectiles = []
